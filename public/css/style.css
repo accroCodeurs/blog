@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .menu-item ul {
+        padding-left: 20px;
+    }
+}
+
+
+/*galerie*/
+
+/* Ajoutez ces styles à votre fichier styles.css */
+
+/* Styles spécifiques à la galerie */
+#galerie {
+    padding: 20px;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Ajoute une bordure autour des images */
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        width: 100%; /* Les images occupent 100% de la largeur sur les petits écrans */
+    }
+}
